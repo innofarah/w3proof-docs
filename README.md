@@ -13,4 +13,4 @@ This project is an ['Exploratory Action'](https://www.inria.fr/en/w3proof) propo
 
 An 'Exploratory Action' is a term coined by [Inria](https://www.inria.fr/en/inria-saclay-centre) to refer to projects attempting to explore new research themes relative to Inria's usually addressed themes in computer science and which might extend to other areas of knowledge.
 
-For more details on the project's idea, refer to [Towards an internet of proof?](https://www.inria.fr/en/towards-internet-proof), and to the [projects's documentation](https://innofarah.github.io/w3proof-docs/).
+For more details on the project's idea, refer to [Towards an internet of proof?](https://www.inria.fr/en/towards-internet-proof), and to the [project's documentation](https://innofarah.github.io/w3proof-docs/).
