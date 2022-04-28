@@ -38,7 +38,7 @@ To quote [Abella's official website](https://abella-prover.org):
 
 Alright, what we really need to say about Abella right now is not something related to the above quotation. Of course it is important, but what we need to deal with currently is **what does this tool produce as assets for us to use**.
 
-Basically, producing a proof for a theorem in Abella consists of introducing in a file for example, some axioms and relevant definitions for the theorem, maybe introducing/proving some other theorems (lemmas) preceding it to be used in its proof, writing the formula of the theorem itself, and then writing the **proof steps** that will help the proof assistant to complete the proof; the proof steps are usually called **proof tactics**, and a grouping of them is called a **proof script**. For you dear reader, this process might look quite familiar, as it is similar to most other software of this type. If it is not, consider the following **example**:
+Basically, producing a proof for a theorem in Abella consists of introducing in a file for example, some axioms and relevant definitions for the theorem, maybe introducing/proving some other theorems (lemmas) preceding it to be used in its proof, writing the formula of the theorem itself, and then writing the **proof steps** that will help the proof assistant to complete the proof; the proof steps are usually called **proof tactics**, and a grouping of them is called a **proof script**. For you dear reader, this process might look quite familiar, as it is similar to what happens in most other software of this type. If it is not, consider the following **example**:
 
 ```apache
 % Definition of natural numbers %
@@ -90,9 +90,10 @@ induction on 1. intros. case H1.
 search. apply IH to H2. search.
 ```
 
-More could be mentioned about what could exist in Abella's `.thm` files, and other types of files. However, the mentioned example should be enough to illustrate the fact that **the file dependency concern is quite important**.
+So, we can say that when we talk about ***proofs*** within Abella, what we actually mean is ***proof scripts*** which drive the proof assistant to prove a theorem correct, and not *proof objects* as those existing in the [Coq proof assistant](https://coq.inria.fr/), for example.
 
-what we need to say here is that 
+More could be said about what could exist in Abella's `.thm` files, and other types of files. However, the mentioned example should be enough to illustrate the fact that **the file dependency concern is quite important**, and thus we must take that into consideration when creating the *data presentation scheme we aspire for*.
+
 
 ### JSON: Data Formatting
 

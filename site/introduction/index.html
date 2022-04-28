@@ -584,7 +584,7 @@
 <p>Abella is an interactive theorem prover based on lambda-tree syntax. This means that Abella is well-suited for reasoning about the meta-theory of programming languages and other logical systems which manipulate objects with binding.</p>
 </blockquote>
 <p>Alright, what we really need to say about Abella right now is not something related to the above quotation. Of course it is important, but what we need to deal with currently is <strong>what does this tool produce as assets for us to use</strong>.</p>
-<p>Basically, producing a proof for a theorem in Abella consists of introducing in a file for example, some axioms and relevant definitions for the theorem, maybe introducing/proving some other theorems (lemmas) preceding it to be used in its proof, writing the formula of the theorem itself, and then writing the <strong>proof steps</strong> that will help the proof assistant to complete the proof; the proof steps are usually called <strong>proof tactics</strong>, and a grouping of them is called a <strong>proof script</strong>. For you dear reader, this process might look quite familiar, as it is similar to most other software of this type. If it is not, consider the following <strong>example</strong>:</p>
+<p>Basically, producing a proof for a theorem in Abella consists of introducing in a file for example, some axioms and relevant definitions for the theorem, maybe introducing/proving some other theorems (lemmas) preceding it to be used in its proof, writing the formula of the theorem itself, and then writing the <strong>proof steps</strong> that will help the proof assistant to complete the proof; the proof steps are usually called <strong>proof tactics</strong>, and a grouping of them is called a <strong>proof script</strong>. For you dear reader, this process might look quite familiar, as it is similar to what happens in most other software of this type. If it is not, consider the following <strong>example</strong>:</p>
 <pre><code class="language-apache">% Definition of natural numbers %
 Kind nat type.
 Type z nat.
@@ -627,8 +627,8 @@ Theorem succ_nat : forall A, nat A -&gt; nat (s A).
 induction on 1. intros. case H1.
 search. apply IH to H2. search.
 </code></pre>
-<p>More could be mentioned about what could exist in Abella's <code>.thm</code> files, and other types of files. However, the mentioned example should be enough to illustrate the fact that <strong>the file dependency concern is quite important</strong>.</p>
-<p>what we need to say here is that </p>
+<p>So, we can say that when we talk about <strong><em>proofs</em></strong> within Abella, what we actually mean is <strong><em>proof scripts</em></strong> which drive the proof assistant to prove a theorem correct, and not <em>proof objects</em> as those existing in the <a href="https://coq.inria.fr/">Coq proof assistant</a>, for example.</p>
+<p>More could be said about what could exist in Abella's <code>.thm</code> files, and other types of files. However, the mentioned example should be enough to illustrate the fact that <strong>the file dependency concern is quite important</strong>, and thus we must take that into consideration when creating the <em>data presentation scheme we aspire for</em>.</p>
 <h3 id="json-data-formatting">JSON: Data Formatting</h3>
 <h3 id="signatures-trust-bridge">Signatures: Trust Bridge</h3>
 <h3 id="ipld-content-addressing">IPLD: Content-Addressing</h3>
