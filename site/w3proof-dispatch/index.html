@@ -30,8 +30,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Rubik";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inconsolata";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -217,7 +217,7 @@
 
   <li class="md-tabs__item">
     <a href="../introduction/" class="md-tabs__link">
-      Introduction
+      Introduction & Components
     </a>
   </li>
 
@@ -303,7 +303,7 @@
   
     <li class="md-nav__item">
       <a href="../introduction/" class="md-nav__link">
-        Introduction
+        Introduction & Components
       </a>
     </li>
   
@@ -326,54 +326,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          w3proof-dispatch
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         w3proof-dispatch
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#motivation" class="md-nav__link">
-    Motivation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entry-goal" class="md-nav__link">
-    Entry Goal
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#components-involved" class="md-nav__link">
-    Components Involved
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -399,35 +354,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#motivation" class="md-nav__link">
-    Motivation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entry-goal" class="md-nav__link">
-    Entry Goal
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#components-involved" class="md-nav__link">
-    Components Involved
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -442,14 +368,6 @@
 
 <h1 id="w3proof-dispatch">w3proof-dispatch</h1>
 <p><a href="https://github.com/innofarah/w3proof-dispatch">Repository on Github</a></p>
-<h2 id="motivation">Motivation</h2>
-<p>Basically, we can consider a formal proof to be some <strong>'asset'</strong> that is considered an evidence for the validity of some statement. These 'assets' are usually produced by <a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">theorem provers</a> and <a href="https://en.wikipedia.org/wiki/Proof_assistant#:~:text=In%20computer%20science%20and%20mathematical,proofs%20by%20human%2Dmachine%20collaboration.">proof assistants</a>. To trust a statement 'on the web' means to 'assert'/'declare' this trust and transmit the <strong>'assertion'</strong> through the web. So, as we are considering formal proofs to be the source of trust, what needs to be transmitted and exchanged as the embodiement of this trust are formal proofs themselves, and thus the 'assets' referring to them.</p>
-<p>As a result, it makes sense to start the exploration by experimenting with how these 'assets' can be presented, shared, and distributed through the web, regardless, for now, of how different and diverse their forms can be, and what problems will arise from this fact. This diversity is due to the existence of several producers of such 'assets' (theorem provers and proof assistants), which differ in both aspects of their implementation as well as the logical foundations they stand upon, which makes the process of normalizing the form of these 'assets' to exchange them in a distributed and transparent manner non-trivial.</p>
-<p>But again, this is not the first thing to address, as before worrying about wanting to plant various kinds of trees in a garden, maybe to make it colorful, one first needs to know how to plant a tree in the first place. Hence, the <a href="https://github.com/innofarah/w3proof-dispatch">w3proof-dispatch</a> tool is a first attempt to explore the potential possibilities.</p>
-<h2 id="entry-goal">Entry Goal</h2>
-<p>The main goal of this tool is to address the idea of sharing formal proofs as produced by the <a href="https://abella-prover.org">Abella</a> proof assistant, and the idea of sharing 'assertions' of the validity of some 'asset', according to some specific producer. What is meant by this? </p>
-<h2 id="components-involved">Components Involved</h2>
-<p>To make things simple at the beginning, only one producer of 'assets' (proof assistant) is considered for experimenting. This producer is the <a href="https://abella-prover.org/">Abella</a> proof assistant. The other component within this experiment is the <a href="https://ipfs.io/">IPFS</a>/<a href="https://ipld.io/">IPLD</a> model.</p>
 
               
             </article>
@@ -468,7 +386,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
+        <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction &amp; Components" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -477,7 +395,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Introduction
+              Introduction & Components
             </div>
           </div>
         </a>
