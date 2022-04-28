@@ -10,7 +10,9 @@ At the higher level, this project attempts to address the notion of providing **
 
 ### Primary Idea
 
-Basically, we can consider a formal proof to be an **asset** that is considered an evidence of the validity of some statement. Such an **asset** is usually produced by [theorem provers](https://en.wikipedia.org/wiki/Automated_theorem_proving) and [proof assistants](https://en.wikipedia.org/wiki/Proof_assistant). The intended idea here is that in addition to providing a **formal proof asset** as evidence, the asset could be *signed* by some entity and provided as an **assertion**. The reason behind the definition of these two notions of an **asset** and an **assertion** is that in the existing theorem proving world, a proof is always rechecked when desired to be reused. This process often requires time and resources; it might be necessary in some cases, but not so in others. However, by allowing the notion of an entity *asserting* a proof of some theorem, and another entity willing to trust the producing entity, a theorem could be reused **without rechecking**. You might say here that, well, we are still believing a theorem/statement by trusting the entity through the signature and not by the proof itself. This is true, at first thought. However, the idea here that the formal proof is still available for rechecking if desired; for example, two different entities might choose to do two different things. Anyway, this is just the foundational idea to start with, and much is to emerge further.
+Basically, we can consider a formal proof to be an **asset** that is considered *an ultimate guarantee* of the validity of some statement. Such an **asset** is usually produced by [theorem provers](https://en.wikipedia.org/wiki/Automated_theorem_proving) and [proof assistants](https://en.wikipedia.org/wiki/Proof_assistant). The intended idea here is that in addition to providing a **formal proof asset** as guarantee, the asset could be *signed* by some entity and provided as an **assertion**.
+
+The reason behind the definition of these two notions of an **asset** and an **assertion** is that in the existing theorem proving world, a proof is always rechecked when desired to be reused. This process often requires time and resources; it might be necessary in some cases, but not so in others. However, by allowing the notion of an entity *asserting* a proof of some theorem, and another entity willing to trust the producing entity, a theorem could be reused **without rechecking**. You might say here that, well, we are still believing a theorem/statement by trusting the entity through the signature and not by the proof itself. This is true, at first thought. However, the idea here that the formal proof is still available for rechecking if desired; for example, two different entities might choose to do two different things. Anyway, this is just the foundational idea to start with, and much is to emerge further.
 
 ### First Step
 
@@ -32,7 +34,7 @@ To quote [Abella's official website](https://abella-prover.org):
 
 Alright, what we really need to say about Abella right now is not something related to the above quotation. Of course it is important, but what we need to deal with currently is **what does this tool produce as assets for us to use**.
 
-Basically, producing a proof for a theorem in Abella consists of introducing in a file for example, some axioms and relevant definitions for the theorem, maybe introducing/proving some other theorems (lemmas) preceding it to be used in its proof, writing the formula of the theorem itself, and then writing the **proof steps** that will help the proof assistant to complete the proof; the proof steps are usually called **proof tactics**, and a grouping of them is called a **proof script**. For you dear reader, this process might look quite familiar, as it is similar to most other software of this type. If it's not, consider the following **example**:
+Basically, producing a proof for a theorem in Abella consists of introducing in a file for example, some axioms and relevant definitions for the theorem, maybe introducing/proving some other theorems (lemmas) preceding it to be used in its proof, writing the formula of the theorem itself, and then writing the **proof steps** that will help the proof assistant to complete the proof; the proof steps are usually called **proof tactics**, and a grouping of them is called a **proof script**. For you dear reader, this process might look quite familiar, as it is similar to most other software of this type. If it is not, consider the following **example**:
 
 ```apache
 % Definition of natural numbers %
@@ -83,6 +85,10 @@ Theorem succ_nat : forall A, nat A -> nat (s A).
 induction on 1. intros. case H1.
 search. apply IH to H2. search.
 ```
+
+More could be mentioned about what could exist in Abella's `.thm` files, and other types of files. However, the mentioned example should be enough to illustrate the fact that **the file dependency concern is quite important**.
+
+what we need to say here is that 
 
 ### JSON: Data Formatting
 
