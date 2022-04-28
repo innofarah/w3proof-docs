@@ -2,7 +2,7 @@
 
 ## Where to Start?
 
-### High-Level Goal
+### Higher-Level Goal
 
 At the higher level, this project attempts to address the notion of providing **trust**, or *an additional layer of trust* on the web by exploiting [formal proofs](https://en.wikipedia.org/wiki/Formal_verification#:~:text=In%20the%20context%20of%20hardware,using%20formal%20methods%20of%20mathematics.), in contrast to the usual scene where trust in a *statement* is provided only through trusting the entity claiming that *statement*, usually by the [public key infrastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure) model or by the [web of trust](https://en.wikipedia.org/wiki/Web_of_trust) model.
 
