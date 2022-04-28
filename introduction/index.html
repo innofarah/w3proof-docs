@@ -340,6 +340,33 @@
     Where to Start?
   </a>
   
+    <nav class="md-nav" aria-label="Where to Start?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-level-goal" class="md-nav__link">
+    High-Level Goal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primary-idea" class="md-nav__link">
+    Primary Idea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-step" class="md-nav__link">
+    First Step
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -379,8 +406,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ipfs-our-agency-to-the-web" class="md-nav__link">
-    IPFS: Our Agency to the Web
+  <a href="#ipfs-our-agent-to-the-web" class="md-nav__link">
+    IPFS: Our Agent to the Web
   </a>
   
 </li>
@@ -444,6 +471,33 @@
     Where to Start?
   </a>
   
+    <nav class="md-nav" aria-label="Where to Start?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-level-goal" class="md-nav__link">
+    High-Level Goal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primary-idea" class="md-nav__link">
+    Primary Idea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-step" class="md-nav__link">
+    First Step
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -483,8 +537,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ipfs-our-agency-to-the-web" class="md-nav__link">
-    IPFS: Our Agency to the Web
+  <a href="#ipfs-our-agent-to-the-web" class="md-nav__link">
+    IPFS: Our Agent to the Web
   </a>
   
 </li>
@@ -510,13 +564,14 @@
 
 <h1 id="introduction-components">Introduction &amp; Components</h1>
 <h2 id="where-to-start">Where to Start?</h2>
-<p>At the higher level, this project attempts to address the notion of providing <strong>trust on the web</strong> by exploiting <a href="https://en.wikipedia.org/wiki/Formal_verification#:~:text=In%20the%20context%20of%20hardware,using%20formal%20methods%20of%20mathematics.">formal proofs</a>, in contrast to the usual scene where trust in a <em>statement</em> is provided only through trusting the entity claiming that <em>statement</em>, usually by the <a href="https://en.wikipedia.org/wiki/Public_key_infrastructure">public key infrastructure</a> model or by the <a href="https://en.wikipedia.org/wiki/Web_of_trust">web of trust</a> model.</p>
-<p><strong>Trust</strong> here could refer to many <strong>themes</strong>, including for example trust in <em>software components</em>, trust in <em>produced scientific results</em>, and trust within <em>journalism and news platforms</em>. <strong>Trust on the web</strong> within the context of these themes means that the <em>data to be trusted</em>, whatever that might be, is exchanged through the web, and thus the notion of trust needs to be addressed within the realm of the web.</p>
-<p>Naturally, before thinking about how to achieve this wide-range goal itself, the <strong>needed tools</strong> to achieve it need to be <strong>investigated</strong> thoroughly. As <strong>formal proofs</strong> are the driving force and the essence of what the source of trust is desired to be, the sharing of formal proofs within the realm of the web needs to be addressed.</p>
-<p>Basically, we can consider a formal proof to be an <strong>asset</strong> that is considered an evidence of the validity of some statement. Such an <strong>asset</strong> is usually produced by <a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">theorem provers</a> and <a href="https://en.wikipedia.org/wiki/Proof_assistant">proof assistants</a>.</p>
-<p>To trust a statement <em>on the web</em> means to <em>assert/declare</em> this trust and transmit the corresponding <strong>assertion</strong> through the web. So, as we are considering formal proofs to be the source of trust, what needs to be transmitted and exchanged as the embodiement of this trust are formal proofs themselves, and thus the <strong>assets</strong> referring to them.</p>
-<p>As a result, it makes sense to start the investigation by experimenting with how these <strong>assets</strong> can be <em>presented</em>, <em>shared</em>, and <em>distributed</em> through the web, regardless for now, of how different and diverse their forms can be, and what problems will arise from this fact. This diversity is due to the existence of several producers of such assets (theorem provers and proof assistants), which differ in both aspects of their implementation as well as the logical foundations they stand upon, which makes the process of normalizing the form of these assets to exchange them in a distributed and transparent manner non-trivial.</p>
-<p>But again, this is not the first thing to address, as before worrying about wanting to plant various kinds of trees in a garden, maybe to make it colorful, one first needs to know how to plant a tree in the first place. Hence, <strong>we start the W3Proof project by developing a first exploratory tool</strong> that is intended <strong>to work with one kind of asset producer</strong>: <a href="../w3proof-dispatch/">w3proof-dispatch</a> &rarr; a first attempt to explore potential possibilities.</p>
+<h3 id="high-level-goal">High-Level Goal</h3>
+<p>At the higher level, this project attempts to address the notion of providing <strong>trust</strong>, or <em>an additional layer of trust</em> on the web by exploiting <a href="https://en.wikipedia.org/wiki/Formal_verification#:~:text=In%20the%20context%20of%20hardware,using%20formal%20methods%20of%20mathematics.">formal proofs</a>, in contrast to the usual scene where trust in a <em>statement</em> is provided only through trusting the entity claiming that <em>statement</em>, usually by the <a href="https://en.wikipedia.org/wiki/Public_key_infrastructure">public key infrastructure</a> model or by the <a href="https://en.wikipedia.org/wiki/Web_of_trust">web of trust</a> model.</p>
+<p><strong>Trust</strong> here could be relevant to many <strong>themes</strong>, including for example trust in <em>software components</em>, trust in <em>produced scientific results</em>, and trust within <em>journalism and news platforms</em>. <strong>Trust on the web</strong> within the context of these themes means that the <em>data to be trusted</em>, whatever that might be, is exchanged through the web, and thus the intended source of trust as well needs to be addressed and exchanged within the realm of the web. Naturally, before thinking about how to achieve this wide-range goal itself, the <strong>foundations, utilities, or steps</strong> needed to achieve it need to be <strong>investigated</strong> thoroughly. As <strong>formal proofs</strong> are the driving force and the essence of what the source of trust is desired to be, the sharing and usage of formal proofs within the realm of the web needs to be addressed.</p>
+<h3 id="primary-idea">Primary Idea</h3>
+<p>Basically, we can consider a formal proof to be an <strong>asset</strong> that is considered an evidence of the validity of some statement. Such an <strong>asset</strong> is usually produced by <a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">theorem provers</a> and <a href="https://en.wikipedia.org/wiki/Proof_assistant">proof assistants</a>. The intended idea here is that in addition to providing a <strong>formal proof asset</strong> as evidence, the asset could be <em>signed</em> by some entity and provided as an <strong>assertion</strong>. The reason behind the definition of these two notions of an <strong>asset</strong> and an <strong>assertion</strong> is that in the existing theorem proving world, a proof is always rechecked when desired to be reused. This process often requires time and resources; it might be necessary in some cases, but not so in others. However, by allowing the notion of an entity <em>asserting</em> a proof of some theorem, and another entity willing to trust the producing entity, a theorem could be reused <strong>without rechecking</strong>. You might say here that, well, we are still believing a theorem/statement by trusting the entity through the signature and not by the proof itself. This is true, at first thought. However, the idea here that the formal proof is still available for rechecking if desired; for example, two different entities might choose to do two different things. Anyway, this is just the foundational idea to start with, and much is to emerge further.</p>
+<h3 id="first-step">First Step</h3>
+<p>As a result, it makes sense to start the investigation by experimenting with how these <strong>assets</strong> and <strong>assertions</strong> can be <em>presented</em>, <em>shared</em>, and <em>distributed</em> through the web, regardless for now, of how different and diverse the forms of <strong>assets</strong> can be, and what problems will arise from this fact. This diversity is due to the existence of several producers of such assets (theorem provers and proof assistants), which differ in both aspects of their implementation as well as the logical foundations they stand upon, which makes the process of normalizing the form of these assets to exchange them in a distributed and transparent manner non-trivial.</p>
+<p>But again, this is not the first thing to address, as before worrying about wanting to plant various kinds of trees in a garden, maybe to make it colorful, one first needs to know how to plant a tree in the first place. Hence, <strong>we start the W3Proof project by developing a first exploratory tool</strong> that is intended <strong>to work with one kind of asset producer</strong> [and consumer] &rarr; <a href="../w3proof-dispatch/">w3proof-dispatch</a>: a first attempt to explore potential possibilities.</p>
 <p>However, before introducing and illustrating the core idea and functionalities of <a href="../w3proof-dispatch/">w3proof-dispatch</a>, let us first present an overview of the <strong>main components</strong> at the base of this project and the main motivations behind using them.</p>
 <hr />
 <h2 id="components-involved">Components Involved</h2>
@@ -572,7 +627,7 @@ search. apply IH to H2. search.
 <h3 id="json-data-formatting">JSON: Data Formatting</h3>
 <h3 id="signatures-trust-bridge">Signatures: Trust Bridge</h3>
 <h3 id="ipld-content-addressing">IPLD: Content-Addressing</h3>
-<h3 id="ipfs-our-agency-to-the-web">IPFS: Our Agency to the Web</h3>
+<h3 id="ipfs-our-agent-to-the-web">IPFS: Our Agent to the Web</h3>
 
               
             </article>
