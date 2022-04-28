@@ -12,7 +12,7 @@ Basically, we can consider a formal proof to be an **asset** that is considered 
 
 To trust a statement *on the web* means to *assert/declare* this trust and transmit the corresponding **assertion** through the web. So, as we are considering formal proofs to be the source of trust, what needs to be transmitted and exchanged as the embodiement of this trust are formal proofs themselves, and thus the **assets** referring to them.
 
-As a result, it makes sense to exploration by experimenting with how these **assets** can be *presented*, *shared*, and *distributed* through the web, regardless for now, of how different and diverse their forms can be, and what problems will arise from this fact. This diversity is due to the existence of several producers of such assets (theorem provers and proof assistants), which differ in both aspects of their implementation as well as the logical foundations they stand upon, which makes the process of normalizing the form of these assets to exchange them in a distributed and transparent manner non-trivial.
+As a result, it makes sense to start the investigation by experimenting with how these **assets** can be *presented*, *shared*, and *distributed* through the web, regardless for now, of how different and diverse their forms can be, and what problems will arise from this fact. This diversity is due to the existence of several producers of such assets (theorem provers and proof assistants), which differ in both aspects of their implementation as well as the logical foundations they stand upon, which makes the process of normalizing the form of these assets to exchange them in a distributed and transparent manner non-trivial.
 
 But again, this is not the first thing to address, as before worrying about wanting to plant various kinds of trees in a garden, maybe to make it colorful, one first needs to know how to plant a tree in the first place. Hence, **we start the W3Proof project by developing a first exploratory tool** that is intended **to work with one kind of asset producer**: [w3proof-dispatch](./w3proof-dispatch.md) &rarr; a first attempt to explore potential possibilities.
 
@@ -30,7 +30,7 @@ To quote [Abella's official website](https://abella-prover.org):
 
 Alright, what we really need to say about Abella right now is not something related to the above quotation. Of course it is important, but what we need to deal with currently is **what does this tool produce as assets for us to use**.
 
-Basically, producing a proof for a theorem in Abella consists of introducing in a file for example, relevant definitions for the theorem, maybe introducing/proving some other theorems (lemmas) preceding it to be used in its proof, and then writing the **proof steps** that will help the proof assistant to complete the proof; called a **proof script**, and the proof steps are usually called **proof tactics**. For you dear reader, this process might look quite familiar, as it is similar to most other similar software. If it's not, consider the following **example**:
+Basically, producing a proof for a theorem in Abella consists of introducing in a file for example, some axioms and relevant definitions for the theorem, maybe introducing/proving some other theorems (lemmas) preceding it to be used in its proof, writing the formula of the theorem itself, and then writing the **proof steps** that will help the proof assistant to complete the proof; the proof steps are usually called **proof tactics**, and a grouping of them is called a **proof script**. For you dear reader, this process might look quite familiar, as it is similar to most other software of this type. If it's not, consider the following **example**:
 
 ```apache
 % Definition of natural numbers %
@@ -57,11 +57,9 @@ search. apply IH to H2. search.
   
 ```
 
-This is an example of what is called a *theorem* file in Abella, with the ".thm" extension.
+This is an example of what is called a ***theorem* file in Abella**, with the `.thm` extension.
 
-The above example as displayed is contained in a single file, however, it could exist differently:
-
-- in two files "nats.thm" and "some_theorems.thm", one of them **Importing** the other:
+The above example as displayed is contained in a single file, however, it could exist differently: in two files `nats.thm` and `some_theorems.thm`, one of them **Importing** the other:
 
 ```apache
 % in file "nats.thm" %
